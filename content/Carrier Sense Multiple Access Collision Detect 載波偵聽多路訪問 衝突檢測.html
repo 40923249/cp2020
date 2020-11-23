@@ -1,0 +1,233 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923249 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923249 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li class='has-children'><a href='PCH 3  Customer Relations 客戶關係.html'>PCH 3  Customer Relations 客戶關係</a><ul class='dropdown'><li><a href='Overview 總覽.html'>Overview 總覽</a><li><a href='Operational Procedures  Communication Methods and 操作程序 溝通方法和專業精神.html'>Operational Procedures  Communication Methods and 操作程序 溝通方法和專業精神</a><li><a href='Professionalism 有效聆聽.html'>Professionalism 有效聆聽</a><li><a href='Taking Ownership取得所有權.html'>Taking Ownership取得所有權</a><li><a href='Remain Courteous and Professional保持禮貌和專業.html'>Remain Courteous and Professional保持禮貌和專業</a><li><a href='Problem Resolution and Follow Up問題解決與跟進.html'>Problem Resolution and Follow Up問題解決與跟進</a><li><a href='Proper Treatment of a Customers Property正確對待客戶財產.html'>Proper Treatment of a Customers Property正確對待客戶財產</a><li><a href='Putting it All Together放在一起.html'>Putting it All Together放在一起</a></li></ul><li class='has-children'><a href='PCH 12  Ethernet Standards PCH 12  以太網標準.html'>PCH 12  Ethernet Standards PCH 12  以太網標準</a><ul class='dropdown'><li><a href='Ethernet Standards 以太網標準.html'>Ethernet Standards 以太網標準</a><li><a href='Ethernet Technology 以太網技術.html'>Ethernet Technology 以太網技術</a><li><a href='Carrier Sense Multiple Access Collision Detect 載波偵聽多路訪問 衝突檢測.html'>Carrier Sense Multiple Access Collision Detect 載波偵聽多路訪問 衝突檢測</a><li><a href='Evolution of Standards 標準的演變.html'>Evolution of Standards 標準的演變</a><li><a href='Planning a Basic Network Connection Using 100 1000BaseT 使用100  1000BaseT規劃基本的網絡連接.html'>Planning a Basic Network Connection Using 100 1000BaseT 使用100  1000BaseT規劃基本的網絡連接</a></li></ul><li><a href='Media.html'>Media</a><li><a href='Distance.html'>Distance</a><li><a href='Verify Connectivity.html'>Verify Connectivity</a><li><a href='媒體.html'>媒體</a><li><a href='距離.html'>距離</a><li class='has-children'><a href='驗證連接性.html'>驗證連接性</a><ul class='dropdown'><li><a href='Differentiating Between Ethernet and TCP IP 區分以太網和TCP   IP.html'>Differentiating Between Ethernet and TCP IP 區分以太網和TCP   IP</a></li></ul><li><a href='Protocols 規約.html'>Protocols 規約</a><li><a href='Ethernet 乙太網路.html'>Ethernet 乙太網路</a><li><a href='TCP IP TCP   IP.html'>TCP IP TCP   IP</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Ethernet Technology 以太網技術 << <a href='Ethernet Technology 以太網技術.html'>Previous</a> <a href='Evolution of Standards 標準的演變.html'>Next</a> >> Evolution of Standards 標準的演變<br /><h1>Carrier Sense Multiple Access Collision Detect 載波偵聽多路訪問 衝突檢測</h1>
+<p id="N10698" lang="">The nature of half-duplex transmission brought about the need for CSMA/CD, which works by allowing all devices to transmit data whenever they wish. The carrier sense portion means that the device “listens” to the network first to find a “break” in the conversation. If the device doesn’t hear other devices transmitting, then it begins its transmission. Multiple access refers to every device having equal access to the network at all times. This is unlike the token ring network in which each device had to wait for the signal (token) before transmitting. Finally, we have collision detection as part of the CSMA/CD control method. If, by chance, two devices both were ready to transmit, they “listened” to the network for a “lull” in the conversation, and both started transmitting at the same time, the devices are able to detect that they both transmitted at the same time and caused a collision.</p>
+<p id="N1069B" lang="">The image below depicts both the CSMA/CD and CSMA/CA simplified algorithm. The left branch is CSMA/CD used by half-duplex Ethernet and the right branch is CSMA/CA used by 802.11 wireless LAN, which is also half-duplex.</p>
+<p id="N10698" lang=""><span>半雙工傳輸的性質帶來了對CSMA / CD的需求，它允許所有設備在需要時傳輸數據。運營商感知部分意味著設備首先“監聽”網絡以在會話中找到“中斷”。如果該設備聽不到其他設備的傳輸，則它將開始傳輸。多路訪問是指每台設備始終具有對網絡的平等訪問權限。這與令牌環網絡不同，在令牌環網絡中，每個設備都必須在發送之前等待信號（令牌）。最後，我們將碰撞檢測作為CSMA / CD控制方法的一部分。如果碰巧有兩個設備都準備好進行傳輸，則它們會在通話中“偵聽”網絡中的“失敗”，並且都同時開始傳輸，</span></p>
+<p id="N1069B" lang=""><span><span>下圖描述了CSMA / CD和CSMA / CA簡化算法。</span><span>左分支是半雙工以太網使用的CSMA / CD，右分支是802.11無線LAN（也是半雙工）使用的CSMA / CA。</span></span></p>
+<div class="imagewrap"><span class="image"><img class="popimg" height="523" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image1.png" width="537"/></span>
+<p id="N106A3" lang="">CSMA/CD and CSMA/CA diagram. By<span> </span><a href="https://commons.wikimedia.org/wiki/File:Csmaca_algorithm.png" id="_i_1" lang="" target="_blank">Tkz4</a><span> </span>(Own work) [<a href="http://creativecommons.org/licenses/by-sa/3.0" id="_i_2" lang="" target="_blank">CC BY-SA 3.0</a><span> </span>or<span> </span><a href="http://www.gnu.org/copyleft/fdl.html" id="_i_3" lang="" target="_blank">GFDL</a>], via Wikimedia Commons</p>
+<p lang=""><span>CSMA / CD和CSMA / CA圖。通過</span><a href="https://commons.wikimedia.org/wiki/File:Csmaca_algorithm.png" id="_i_1" lang="" target="_blank"><span><span>Tkz4</span></span></a><span><span>（自己的作品）[<span> </span></span></span><a href="http://creativecommons.org/licenses/by-sa/3.0" id="_i_2" lang="" target="_blank"><span><span>CC BY-SA 3.0</span></span></a><span><span>或</span></span><a href="http://www.gnu.org/copyleft/fdl.html" id="_i_3" lang="" target="_blank"><span><span>GFDL</span></span></a><span><span><span> </span>]，通過Wikimedia Commons</span></span></p>
+</div>
+<p id="N106B9" lang="">In the example shown below, four devices are connected in a physical bus topology. Each device has equal access to the network. Here, all the devices are listening, trying to determine if any other device is communicating before beginning transmission.</p>
+<p id="N106B9" lang=""><span>在下面顯示的示例中，四個設備以物理總線拓撲連接。每個設備對網絡都有平等的訪問權限。在這裡，所有設備都在監聽，試圖確定是否有其他設備在開始傳輸之前進行通信。</span></p>
+<div class="imagewrap"><span class="image"><img class="popimg" height="287" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image2.png" width="412"/></span>
+<p id="N106C1" lang="">Ethernet devices on a shared bus topology. Image used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_5" lang="" target="_blank">Nattydusadee</a>.</p>
+<p lang=""><span>共享總線拓撲上的以太網設備。由</span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_5" lang="" target="_blank"><span><span>Nattydusadee</span></span></a><span><span>根據CC-BY-SA許可使用的</span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_5" lang="" target="_blank"><span>圖片</span></a><span>。</span></span></p>
+</div>
+<p id="N106CA" lang="">In the next image below, we see an example of two devices that transmitted at the same time. This simultaneous transmission resulted in a data collision, causing the transmission to be broken.</p>
+<p lang=""><span>在下一張圖片中，我們看到了兩個同時傳輸的設備的示例。</span><span>這種同時傳輸導致數據衝突，導致傳輸中斷。</span></p>
+<div class="imagewrap"><span class="image"><img class="popimg" height="348" id="_i_6" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image3.png" width="499"/></span>
+<p id="N106D2" lang="">Collision on an Ethernet segment. Image used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_7" lang="" target="_blank">Nattydusadee</a>.</p>
+<p lang=""><span>以太網段上的衝突。由</span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_7" lang="" target="_blank"><span><span>Nattydusadee</span></span></a><span><span>根據CC-BY-SA許可使用的<span> </span></span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_7" lang="" target="_blank"><span>圖片</span></a><span>。</span></span></p>
+</div>
+<p id="N106DB" lang="">When a collision is detected, both devices choose a backoff time at random, and then attempt to retransmit again. In the diagram below, the computers choose to wait 200 milliseconds and 300 milliseconds, respectively. When that time is up, they will attempt to sense if another machine is already transmitting. If there is nothing detected, the first machine will transmit its message. Once completed, the second machine will then transmit its message, after its 300 millisecond wait time.</p>
+<p lang=""><span>當檢測到衝突時，兩個設備都會隨機選擇一個退避時間，然後嘗試重新傳輸。</span><span>在下圖中，計算機分別選擇等待200毫秒和300毫秒。</span><span>時間到時，他們將嘗試檢測另一台機器是否已經在傳輸。</span><span>如果未檢測到任何內容，則第一台機器將發送其消息。</span><span>一旦完成，第二台機器將在其300毫秒的等待時間之後發送其消息。</span></p>
+<div class="imagewrap"><span class="image"><img class="popimg" height="347" id="_i_8" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image4.png" width="498"/></span>
+<p id="N106E3" lang="">Recovering from a collision with random backup timers. Image used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_9" lang="" target="_blank">Nattydusadee</a>.</p>
+<p lang=""><span>使用隨機備份計時器從衝突中恢復。由</span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_9" lang="" target="_blank"><span><span>Nattydusadee</span></span></a><span><span>根據CC-BY-SA許可使用的</span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_9" lang="" target="_blank"><span>圖片</span></a><span>。</span></span></p>
+<h4><span><span>Collision Domains 碰撞域</span></span></h4>
+<p id="N10731" lang="">The concept of collision domains is very important in Ethernet standards, because collision domains determine how fast the network will actually operate. As shown in the previous diagram, collisions cause the devices to back off, wait, and then retransmit. If this occurs too often, valuable time is wasted and frequent collisions bring network speeds down - somewhat like a traffic jam on an interstate. All devices on a shared Ethernet segment are members of a single collision domain. If you are running Thicknet or Thinnet (coaxial bus networks), then all devices on a single cable are in the same collision domain. If you are using a star topology with unshielded twisted pair, then all devices connected to a singular hub (since hubs repeat the transmissions on every port) are part of a single collision domain operating at half-duplex.</p>
+<p id="N10734" lang="">To prevent collisions in the network, the collision domains must be kept small. One option is to use bridge connecting hubs to break up the collision domains. However, an even more effective method of doing this is to use switches. Remember, hubs create collision domains while switches break up collision domains but also create broadcast domains.</p>
+<p id="N10731" lang=""><span>衝突域的概念在以太網標準中非常重要，因為衝突域決定了網絡實際運行的速度。如上圖所示，衝突導致設備退避，等待，然後重新傳輸。如果這種情況經常發生，則會浪費寶貴的時間，頻繁的衝突會降低網絡速度-就像州際公路上的交通擁堵一樣。共享以太網網段上的所有設備都是單個衝突域的成員。如果運行的是Thinnet或Thinnet（同軸總線網絡），則單根電纜上的所有設備都在同一沖突域中。如果您使用的是帶有非屏蔽雙絞線的星形拓撲，</span></p>
+<p id="N10734" lang=""><span><span>為了防止網絡中發生衝突，必須將衝突域保持較小。</span><span>一種選擇是使用橋接連接集線器來拆分衝突域。</span><span>但是，一種更有效的方法是使用開關。</span><span>請記住，集線器創建衝突域，而交換機分解衝突域，但也創建廣播域。</span></span></p>
+<div class="imagewrap"><span class="image"><img class="popimg" id="_i_10" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image5.png"/></span>
+<p id="N1073C" lang="">One collision domain. Image used under CC-BY license from<span> </span><a href="http://www.jasondion.com/" id="_i_11" lang="" target="_blank">Jason Dion</a>.</p>
+<div class="imagewrap">
+<p id="N1073C" lang=""><span>一個衝突域。圖片由</span><a href="http://www.jasondion.com/" id="_i_11" lang="" target="_blank"><span>Jason Dion</span></a><span>根據CC-BY許可使用。</span></p>
+</div>
+</div>
+<p id="N10745" lang="">Ethernet switches are preferred over hubs due to their ability to solve the collision domain issue. For the most part, switches have replace hubs; it is rare to see hubs and bridges in current networks because of the superior operation of switches and the overall price reduction.</p>
+<p id="N10748" lang="">Each switch port is its own collision domain and supports full duplex (simultaneous TX and RX) when operating at 100Mbs or faster and using CAT5 cabling or better. This prevents any chance of collision, eliminates the need for CSMA/CD, and increases the speed of the network dramatically compared to hubs.</p>
+<p id="N10745" lang=""><span>以太網交換機比集線器更受青睞，因為它們具有解決衝突域問題的能力。在大多數情況下，交換機都可以更換集線器。由於交換機的出色操作和總體價格降低，很少會在當前網絡中看到集線器和橋接器。</span></p>
+<p id="N10748" lang=""><span><span>每個交換機端口都是其自己的衝突域，並且在以100Mbs或更快的速度運行並且使用CAT5電纜或更高規格的電纜時，支持全雙工（同時發送和接收）。</span><span>與集線器相比，這可以防止發生任何衝突的機會，消除對CSMA / CD的需求，並顯著提高網絡速度。</span></span></p>
+<div class="imagewrap"></div>
+<div class="imagewrap"><span class="image"><img class="popimg" id="_i_12" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image6.png"/></span>
+<p id="N10750" lang="">Three collision domains. Image used under CC-BY license from<span> </span><a href="http://www.jasondion.com/" id="_i_13" lang="" target="_blank">Jason Dion</a>.</p>
+<p lang=""><span>三個碰撞域。圖片由</span><a href="http://www.jasondion.com/" id="_i_13" lang="" target="_blank"><span><span>Jason Dion</span></span></a><span><span>根據CC-BY許可使用</span></span></p>
+</div>
+</div>
+<br />Ethernet Technology 以太網技術 << <a href='Ethernet Technology 以太網技術.html'>Previous</a> <a href='Evolution of Standards 標準的演變.html'>Next</a> >> Evolution of Standards 標準的演變</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

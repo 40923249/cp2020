@@ -226,3 +226,363 @@
 </ul>
 <p id="N106A9" lang=""><span><span>與客戶服務打交道時，我們始終希望超越客戶的期望。</span><span>完成此任務的關鍵一步是設置並滿足您為客戶提供的時間表。</span><span>您需要告訴客戶維修需要多長時間，以及是否值得花費維修費用。</span><span>如果客戶要求您更換一台使用了四年的舊筆記本電腦的筆記本電腦屏幕壞了，那麼客戶只需購買一台新筆記本電腦可能更具成本效益。</span><span>（注意：筆記本電腦維修的經驗法則是，如果筆記本電腦維修費用佔新筆記本電腦成本的50％或以上，則建議更換。）</span></span></p>
 <p id="N106AC" lang=""><span><span>如果有可用的選件，請在邏輯上將其與估計的成本，維修時間和工作站的未來服務時間一起提供。</span><span>向客戶提供服務時，請始終提供有關所提供服務的文檔。</span></span></p>
+<h2><span><span>PCH 12  Ethernet Standards PCH 12  以太網標準</span></span></h2>
+<h3><span><span>Ethernet Standards 以太網標準</span></span></h3>
+<h4><span><span>Overview 總覽</span></span></h4>
+<p><span><span>In this module, we are going to discuss how the various Ethernet standards developed over time. We will also discuss why there is a need for these standards and the effect of these standards on the industry. In addition, we are going to cover various types of network media standards. We will cover 10Base-T (802.3i, 1990) as well as 100Base-T and 1000Base-T (1GBASE-T or 1 GigE) Ethernet standards, which are most commonly found in current office networks. We will discover how to plan a basic network connection using 100BaseT. Finally, we will cover differences between Ethernet and TCP/IP.</span></span></p>
+<p><span><span><span>在本模塊中，我們將討論隨著時間的推移如何開發各種以太網標準。</span><span>我們還將討論為什麼需要這些標準以及這些標準對行業的影響。</span><span>另外，我們將涵蓋各種類型的網絡媒體標準。</span><span>我們將介紹10Base-T（802.3i，1990）以及100Base-T和1000Base-T（1GBASE-T或1 GigE）以太網標準，它們是當前辦公網絡中最常見的標準。</span><span>我們將發現如何使用100BaseT規劃基本的網絡連接。</span><span>最後，我們將介紹以太網和TCP / IP之間的差異。</span></span></span></p>
+<h3><span><span>Ethernet Technology 以太網技術</span></span></h3>
+<p id="N10690" lang="">Before Ethernet was the dominant technology, there were multiple types of networking technologies competing for market share. At one point, Ethernet was just one of many competing standards, including token ring, fiber distributed data interface (FDDI), and more. By the late 1990s, a single standard was clearly the dominant choice in both office and residential networks: IEEE 802.3 Ethernet. Ethernet uses various media types, from coaxial cable to twisted-pair copper and fiber-optic cables (discussed in an earlier module). The 802.3 Ethernet standard and the concept of using frames for communication over various media, including Wireless 802.11, is predominant today, and it is vital to understand the fundamentals of Ethernet including the various speed and distance limitations each standard places on our networks.</p>
+<p id="N10693" lang="">The original 802.3 Ethernet standard sent data over coaxial cables at a half-duplex transmission rate which means devices can only transmit (TX) or Receive (RX) alternately at separate intervals because the data used the same path for both. This is analagous to communicating using a walkie-talkie rather than a telephone.</p>
+<p id="N10696" lang="">This coaxial cable design became known as Thicknet and later Thinnet due to the size of the cables and was mostly used in bus and ring network topologies.</p>
+<p id="N10699" lang="">Thicknet, the original IEEE 802.3 standard designated as 10Base5, provided a maximum bandwidth of 10Mbps and was limited in distance to 500 meters. Thinnet, or IEEE 10Base2, used a smaller type of coaxial and also provided a maximum bandwidth of 10 Mbps, but was limited to 185 meters. Eventually the industry transitioned from coaxial cabling to unshielded twisted-pair cabling.</p>
+<p id="N1069C" lang="">Twisted pair cabling, dubbed 10BaseT, provided the same 10 Mbps half-duplex maximum bandwidth with a category 3 cable, but the distance was limited to 100 meters due to the lack of the extra shield that coaxial provided. In spite of the increased attenuation (loss of signal strength over distance), network designers moved to twisted pair cabling because of ease of installation and overall lower cost. Coaxial cable fell out of favor and the 802.3 Ethernet standard continues to evolve with faster data rates over twisted pair cabling categories.</p>
+<p id="N1069F" lang="">The design question that Ethernet had to answer was how a device should access the network. The nature of half-duplex transmission (TX or RX) over a single wire pair meant that collisions were imminent. Should the access be deterministic and orderly, or contention-based and chaotic? The older ring-based networks, such as token ring, were developed upon the premise that order was necessary: each machine would wait for its turn to transmit its data until it received the electronic token that was passed around the ring. This is similar to the “talking stick” or “speaker’s staff” used by Native Americans and other aboriginal tribes where the staff (token) gave the person access to speak and the remaining group members listened. Ethernet, on the other hand, is premised upon a contention-based model. This is more chaotic and allows any device on the network to transmit anytime it wishes. The problem with this type of philosophy is figuring out how to prevent two devices from transmitting at the same time and causing a collision of the data. With Ethernet, the answer came in the form of a media access control method called carrier sense multiple access/collision detect (CSMA/CD).</p>
+<p id="N10690" lang=""><span>在以太網成為主導技術之前，存在多種類型的網絡技術爭奪市場份額。一方面，以太網只是眾多競爭標準之一，包括令牌環，光纖分佈式數據接口（FDDI）等。到1990年代後期，單一標準顯然已成為辦公室和住宅網絡中的主要選擇：IEEE 802.3以太網。以太網使用多種介質類型，從同軸電纜到雙絞銅線和光纖電纜（在較早的模塊中討論）。802.3以太網標準和使用幀在包括無線802.11在內的各種媒體上進行通信的概念如今非常盛行，了解以太網的基本知識（包括每個標準對我們網絡的各種速度和距離限制）至關重要。</span></p>
+<p id="N10693" lang=""><span><span>最初的802.3以太網標準以半雙工傳輸速率通過同軸電纜發送數據，這意味著設備只能以單獨的間隔交替發送（TX）或接收（RX），因為這兩個數據使用相同的路徑。</span><span>這類似於使用對講機而不是電話進行通信。</span></span></p>
+<p id="N10696" lang=""><span><span>由於電纜的尺寸，這種同軸電纜設計被稱為Thinnet，後來被稱為Thinnet，主要用於總線和環形網絡拓撲中。</span></span></p>
+<p id="N10699" lang=""><span><span>最初被指定為10Base5的IEEE 802.3標準Thicknet提供的最大帶寬為10Mbps，並且距離限制為500米。</span><span>Thinnet或IEEE 10Base2使用較小類型的同軸電纜，並且提供的最大帶寬為10 Mbps，但限制為185米。</span><span>最終，該行業從同軸電纜過渡到非屏蔽雙絞線電纜。</span></span></p>
+<p id="N1069C" lang=""><span><span>雙絞線電纜（稱為10BaseT）與3類電纜提供了相同的10 Mbps半雙工最大帶寬，但由於缺少同軸電纜提供的額外屏蔽，因此距離限制為100米。</span><span>儘管衰減增加（信號強度隨著距離的增加而損失），但由於易於安裝且總體成本較低，網絡設計人員仍選擇雙絞線佈線。</span><span>同軸電纜不受歡迎，並且802.3以太網標準繼續發展，雙絞線佈線類別的數據速率更快。</span></span></p>
+<p id="N1069F" lang=""><span><span>以太網必須回答的設計問題是設備應如何訪問網絡。</span><span>單線對上半雙工傳輸（TX或RX）的性質意味著即將發生衝突。</span><span>訪問應該是確定性和有序的，還是基於競爭的且混亂的？</span><span>較早的基於環的網絡（例如令牌環）是在必須有順序的前提下開發的：每台機器都將等待其輪流發送其數據，直到接收到圍繞環傳遞的電子令牌為止。</span><span>這類似於美洲原住民和其他原住民部落使用的“說話棒”或“發言人的工作人員”，其中工作人員（令牌）使該人員可以發言，其餘的小組成員則可以收聽。</span><span>另一方面，以太網以基於競爭的模型為前提。</span><span>這更加混亂，並且允許網絡上的任何設備在其希望的任何時間進行傳輸。</span><span>這種類型的原理存在的問題是，要弄清楚如何防止兩個設備同時傳輸並導致數據衝突。</span><span>對於以太網，答案是以一種稱為載波偵聽多路訪問/衝突檢測（CSMA / CD）的媒體訪問控制方法的形式出現的。</span></span></p>
+<h3><span><span>Carrier Sense Multiple Access Collision Detect 載波偵聽多路訪問 衝突檢測</span></span></h3>
+<p id="N10698" lang="">The nature of half-duplex transmission brought about the need for CSMA/CD, which works by allowing all devices to transmit data whenever they wish. The carrier sense portion means that the device “listens” to the network first to find a “break” in the conversation. If the device doesn’t hear other devices transmitting, then it begins its transmission. Multiple access refers to every device having equal access to the network at all times. This is unlike the token ring network in which each device had to wait for the signal (token) before transmitting. Finally, we have collision detection as part of the CSMA/CD control method. If, by chance, two devices both were ready to transmit, they “listened” to the network for a “lull” in the conversation, and both started transmitting at the same time, the devices are able to detect that they both transmitted at the same time and caused a collision.</p>
+<p id="N1069B" lang="">The image below depicts both the CSMA/CD and CSMA/CA simplified algorithm. The left branch is CSMA/CD used by half-duplex Ethernet and the right branch is CSMA/CA used by 802.11 wireless LAN, which is also half-duplex.</p>
+<p id="N10698" lang=""><span>半雙工傳輸的性質帶來了對CSMA / CD的需求，它允許所有設備在需要時傳輸數據。運營商感知部分意味著設備首先“監聽”網絡以在會話中找到“中斷”。如果該設備聽不到其他設備的傳輸，則它將開始傳輸。多路訪問是指每台設備始終具有對網絡的平等訪問權限。這與令牌環網絡不同，在令牌環網絡中，每個設備都必須在發送之前等待信號（令牌）。最後，我們將碰撞檢測作為CSMA / CD控制方法的一部分。如果碰巧有兩個設備都準備好進行傳輸，則它們會在通話中“偵聽”網絡中的“失敗”，並且都同時開始傳輸，</span></p>
+<p id="N1069B" lang=""><span><span>下圖描述了CSMA / CD和CSMA / CA簡化算法。</span><span>左分支是半雙工以太網使用的CSMA / CD，右分支是802.11無線LAN（也是半雙工）使用的CSMA / CA。</span></span></p>
+<div class="imagewrap"><span class="image"><img class="popimg" height="523" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image1.png" width="537"/></span>
+<p id="N106A3" lang="">CSMA/CD and CSMA/CA diagram. By<span> </span><a href="https://commons.wikimedia.org/wiki/File:Csmaca_algorithm.png" id="_i_1" lang="" target="_blank">Tkz4</a><span> </span>(Own work) [<a href="http://creativecommons.org/licenses/by-sa/3.0" id="_i_2" lang="" target="_blank">CC BY-SA 3.0</a><span> </span>or<span> </span><a href="http://www.gnu.org/copyleft/fdl.html" id="_i_3" lang="" target="_blank">GFDL</a>], via Wikimedia Commons</p>
+<p lang=""><span>CSMA / CD和CSMA / CA圖。通過</span><a href="https://commons.wikimedia.org/wiki/File:Csmaca_algorithm.png" id="_i_1" lang="" target="_blank"><span><span>Tkz4</span></span></a><span><span>（自己的作品）[<span> </span></span></span><a href="http://creativecommons.org/licenses/by-sa/3.0" id="_i_2" lang="" target="_blank"><span><span>CC BY-SA 3.0</span></span></a><span><span>或</span></span><a href="http://www.gnu.org/copyleft/fdl.html" id="_i_3" lang="" target="_blank"><span><span>GFDL</span></span></a><span><span><span> </span>]，通過Wikimedia Commons</span></span></p>
+</div>
+<p id="N106B9" lang="">In the example shown below, four devices are connected in a physical bus topology. Each device has equal access to the network. Here, all the devices are listening, trying to determine if any other device is communicating before beginning transmission.</p>
+<p id="N106B9" lang=""><span>在下面顯示的示例中，四個設備以物理總線拓撲連接。每個設備對網絡都有平等的訪問權限。在這裡，所有設備都在監聽，試圖確定是否有其他設備在開始傳輸之前進行通信。</span></p>
+<div class="imagewrap"><span class="image"><img class="popimg" height="287" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image2.png" width="412"/></span>
+<p id="N106C1" lang="">Ethernet devices on a shared bus topology. Image used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_5" lang="" target="_blank">Nattydusadee</a>.</p>
+<p lang=""><span>共享總線拓撲上的以太網設備。由</span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_5" lang="" target="_blank"><span><span>Nattydusadee</span></span></a><span><span>根據CC-BY-SA許可使用的</span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_5" lang="" target="_blank"><span>圖片</span></a><span>。</span></span></p>
+</div>
+<p id="N106CA" lang="">In the next image below, we see an example of two devices that transmitted at the same time. This simultaneous transmission resulted in a data collision, causing the transmission to be broken.</p>
+<p lang=""><span>在下一張圖片中，我們看到了兩個同時傳輸的設備的示例。</span><span>這種同時傳輸導致數據衝突，導致傳輸中斷。</span></p>
+<div class="imagewrap"><span class="image"><img class="popimg" height="348" id="_i_6" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image3.png" width="499"/></span>
+<p id="N106D2" lang="">Collision on an Ethernet segment. Image used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_7" lang="" target="_blank">Nattydusadee</a>.</p>
+<p lang=""><span>以太網段上的衝突。由</span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_7" lang="" target="_blank"><span><span>Nattydusadee</span></span></a><span><span>根據CC-BY-SA許可使用的<span> </span></span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_7" lang="" target="_blank"><span>圖片</span></a><span>。</span></span></p>
+</div>
+<p id="N106DB" lang="">When a collision is detected, both devices choose a backoff time at random, and then attempt to retransmit again. In the diagram below, the computers choose to wait 200 milliseconds and 300 milliseconds, respectively. When that time is up, they will attempt to sense if another machine is already transmitting. If there is nothing detected, the first machine will transmit its message. Once completed, the second machine will then transmit its message, after its 300 millisecond wait time.</p>
+<p lang=""><span>當檢測到衝突時，兩個設備都會隨機選擇一個退避時間，然後嘗試重新傳輸。</span><span>在下圖中，計算機分別選擇等待200毫秒和300毫秒。</span><span>時間到時，他們將嘗試檢測另一台機器是否已經在傳輸。</span><span>如果未檢測到任何內容，則第一台機器將發送其消息。</span><span>一旦完成，第二台機器將在其300毫秒的等待時間之後發送其消息。</span></p>
+<div class="imagewrap"><span class="image"><img class="popimg" height="347" id="_i_8" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image4.png" width="498"/></span>
+<p id="N106E3" lang="">Recovering from a collision with random backup timers. Image used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_9" lang="" target="_blank">Nattydusadee</a>.</p>
+<p lang=""><span>使用隨機備份計時器從衝突中恢復。由</span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_9" lang="" target="_blank"><span><span>Nattydusadee</span></span></a><span><span>根據CC-BY-SA許可使用的</span><a href="https://commons.wikimedia.org/wiki/File:%3DBus-Topology.jpg#/media/File:%3DBus-Topology.jpg" id="_i_9" lang="" target="_blank"><span>圖片</span></a><span>。</span></span></p>
+<h4><span><span>Collision Domains 碰撞域</span></span></h4>
+<p id="N10731" lang="">The concept of collision domains is very important in Ethernet standards, because collision domains determine how fast the network will actually operate. As shown in the previous diagram, collisions cause the devices to back off, wait, and then retransmit. If this occurs too often, valuable time is wasted and frequent collisions bring network speeds down - somewhat like a traffic jam on an interstate. All devices on a shared Ethernet segment are members of a single collision domain. If you are running Thicknet or Thinnet (coaxial bus networks), then all devices on a single cable are in the same collision domain. If you are using a star topology with unshielded twisted pair, then all devices connected to a singular hub (since hubs repeat the transmissions on every port) are part of a single collision domain operating at half-duplex.</p>
+<p id="N10734" lang="">To prevent collisions in the network, the collision domains must be kept small. One option is to use bridge connecting hubs to break up the collision domains. However, an even more effective method of doing this is to use switches. Remember, hubs create collision domains while switches break up collision domains but also create broadcast domains.</p>
+<p id="N10731" lang=""><span>衝突域的概念在以太網標準中非常重要，因為衝突域決定了網絡實際運行的速度。如上圖所示，衝突導致設備退避，等待，然後重新傳輸。如果這種情況經常發生，則會浪費寶貴的時間，頻繁的衝突會降低網絡速度-就像州際公路上的交通擁堵一樣。共享以太網網段上的所有設備都是單個衝突域的成員。如果運行的是Thinnet或Thinnet（同軸總線網絡），則單根電纜上的所有設備都在同一沖突域中。如果您使用的是帶有非屏蔽雙絞線的星形拓撲，</span></p>
+<p id="N10734" lang=""><span><span>為了防止網絡中發生衝突，必須將衝突域保持較小。</span><span>一種選擇是使用橋接連接集線器來拆分衝突域。</span><span>但是，一種更有效的方法是使用開關。</span><span>請記住，集線器創建衝突域，而交換機分解衝突域，但也創建廣播域。</span></span></p>
+<div class="imagewrap"><span class="image"><img class="popimg" id="_i_10" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image5.png"/></span>
+<p id="N1073C" lang="">One collision domain. Image used under CC-BY license from<span> </span><a href="http://www.jasondion.com/" id="_i_11" lang="" target="_blank">Jason Dion</a>.</p>
+<div class="imagewrap">
+<p id="N1073C" lang=""><span>一個衝突域。圖片由</span><a href="http://www.jasondion.com/" id="_i_11" lang="" target="_blank"><span>Jason Dion</span></a><span>根據CC-BY許可使用。</span></p>
+</div>
+</div>
+<p id="N10745" lang="">Ethernet switches are preferred over hubs due to their ability to solve the collision domain issue. For the most part, switches have replace hubs; it is rare to see hubs and bridges in current networks because of the superior operation of switches and the overall price reduction.</p>
+<p id="N10748" lang="">Each switch port is its own collision domain and supports full duplex (simultaneous TX and RX) when operating at 100Mbs or faster and using CAT5 cabling or better. This prevents any chance of collision, eliminates the need for CSMA/CD, and increases the speed of the network dramatically compared to hubs.</p>
+<p id="N10745" lang=""><span>以太網交換機比集線器更受青睞，因為它們具有解決衝突域問題的能力。在大多數情況下，交換機都可以更換集線器。由於交換機的出色操作和總體價格降低，很少會在當前網絡中看到集線器和橋接器。</span></p>
+<p id="N10748" lang=""><span><span>每個交換機端口都是其自己的衝突域，並且在以100Mbs或更快的速度運行並且使用CAT5電纜或更高規格的電纜時，支持全雙工（同時發送和接收）。</span><span>與集線器相比，這可以防止發生任何衝突的機會，消除對CSMA / CD的需求，並顯著提高網絡速度。</span></span></p>
+<div class="imagewrap"></div>
+<div class="imagewrap"><span class="image"><img class="popimg" id="_i_12" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image6.png"/></span>
+<p id="N10750" lang="">Three collision domains. Image used under CC-BY license from<span> </span><a href="http://www.jasondion.com/" id="_i_13" lang="" target="_blank">Jason Dion</a>.</p>
+<p lang=""><span>三個碰撞域。圖片由</span><a href="http://www.jasondion.com/" id="_i_13" lang="" target="_blank"><span><span>Jason Dion</span></span></a><span><span>根據CC-BY許可使用</span></span></p>
+</div>
+</div>
+<h3><span><span><br/>Evolution of Standards 標準的演變</span></span></h3>
+<p id="N10690" lang="">Finally, we need to discuss the various standards we use in Ethernet in terms of bandwidth and distance limitations.</p>
+<p id="N10693" lang="">The Ethernet standard also determines the type of cable, its bandwidth, and its distance limitation. It is important to know these standards, especially those that relate to a category 3, 5, 5e, and 6 cabling standard.</p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th lang="">Ethernet Standard</th>
+<th lang="">Media Type</th>
+<th lang="">Bandwidth Capacity</th>
+<th lang="">Distance Limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td lang="">10Base5</td>
+<td lang="">Coax (thicknet)</td>
+<td lang="">10 Mbps</td>
+<td lang="">500 m</td>
+</tr>
+<tr class="e">
+<td lang="">10Base2</td>
+<td lang="">Coax (thinnet)</td>
+<td lang="">10 Mbps</td>
+<td lang="">185 m</td>
+</tr>
+<tr>
+<td lang="">10BaseT</td>
+<td lang="">Cat 3 or higher</td>
+<td lang="">10 Mbps</td>
+<td lang="">100 m</td>
+</tr>
+<tr class="e">
+<td lang="">100BaseTX</td>
+<td lang="">Cat 5 or higher</td>
+<td lang="">100 Mbps</td>
+<td lang="">100 m</td>
+</tr>
+<tr>
+<td lang="">1 GBase-T</td>
+<td lang="">Cat 6 or higher</td>
+<td lang="">1 Gbps</td>
+<td lang="">100 m</td>
+</tr>
+<tr class="e">
+<td lang="">10 GBase-T</td>
+<td lang="">Cat 6 or higher</td>
+<td lang="">10 Gbps</td>
+<td lang="">100 m (Cat 6a or 7)</td>
+</tr>
+<tr>
+<td lang="">1000BaseLX</td>
+<td lang="">MMF/SMF</td>
+<td lang="">1 Gbps</td>
+<td lang="">5 km</td>
+</tr>
+<tr class="e">
+<td lang="">1000BaseLH</td>
+<td lang="">SMF</td>
+<td lang="">1 Gbps</td>
+<td lang="">10 km</td>
+</tr>
+<tr>
+<td lang="">1000BaseZX</td>
+<td lang="">SMF</td>
+<td lang="">1 Gbps</td>
+<td lang="">70 km</td>
+</tr>
+</tbody>
+</table>
+<p id="N1072E" lang="">When discussing data flow and speed, the two terms referred to are bandwidth and throughput. Often used interchangeably, the two terms are different and need to be understood. Simply put, bandwidth is the theoretical maximum of the given standard, whereas throughput is the actual potential in a real-world scenario. Many factors affect actual throughput, such as half-duplex vs. full-duplex, cable length, and quality. Both bandwidth and throughput are measured in bits per second (bps) with the prefix K (kilobit), M (megabit), or G (gigabit). Each Ethernet category (cat) cable supports a different Ethernet standard and thereby determines the bandwidth capacity or maximum throughput. The table below shows the bandwidth according to Ethernet type.</p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th lang="">EthernetType</th>
+<th lang="">BandwidthCapacity</th>
+<th lang="">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td lang="">Ethernet</td>
+<td lang="">10 Mbps</td>
+<td lang="">10 million bits per second</td>
+</tr>
+<tr class="e">
+<td lang="">Fast Ethernet</td>
+<td lang="">100 Mbps</td>
+<td lang="">100 million bits per second</td>
+</tr>
+<tr>
+<td lang="">Gigabit Ethernet</td>
+<td lang="">1000 Mbps or1 Gbps</td>
+<td lang="">1 billion bits per second</td>
+</tr>
+<tr class="e">
+<td lang="">40-Gigabit Ethernet</td>
+<td lang="">40 Gbps</td>
+<td lang="">40 billion bits per second</td>
+</tr>
+<tr>
+<td lang="">100-Gigabit Ethernet</td>
+<td lang="">100 Gbps</td>
+<td lang="">100 billion bits per second</td>
+</tr>
+</tbody>
+</table>
+<p id="N10690" lang=""><span>最後，我們需要討論帶寬和距離限制方面在以太網中使用的各種標準。</span></p>
+<p id="N10693" lang=""><span><span>以太網標準還確定電纜的類型，帶寬和距離限制。</span><span>重要的是要知道這些標準，尤其是那些與3、5、5e和6類佈線標準有關的標準。</span></span></p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th lang=""><span><span>以太網標準</span></span></th>
+<th lang=""><span><span>媒體類型</span></span></th>
+<th lang=""><span><span>帶寬容量</span></span></th>
+<th lang=""><span><span>距離限制</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td lang=""><span><span>10Base5</span></span></td>
+<td lang=""><span><span>同軸電纜（厚網）</span></span></td>
+<td lang=""><span><span>10 Mbps</span></span></td>
+<td lang=""><span><span>500米</span></span></td>
+</tr>
+<tr class="e">
+<td lang=""><span><span>10Base2</span></span></td>
+<td lang=""><span><span>同軸電纜（薄網）</span></span></td>
+<td lang=""><span><span>10 Mbps</span></span></td>
+<td lang=""><span><span>185米</span></span></td>
+</tr>
+<tr>
+<td lang=""><span><span>10BaseT</span></span></td>
+<td lang=""><span><span>Cat 3或更高</span></span></td>
+<td lang=""><span><span>10 Mbps</span></span></td>
+<td lang=""><span><span>100米</span></span></td>
+</tr>
+<tr class="e">
+<td lang=""><span><span>100BaseTX</span></span></td>
+<td lang=""><span><span>Cat 5或更高</span></span></td>
+<td lang=""><span><span>100 Mbps的</span></span></td>
+<td lang=""><span><span>100米</span></span></td>
+</tr>
+<tr>
+<td lang=""><span><span>1個GBase-T</span></span></td>
+<td lang=""><span><span>Cat 6或更高</span></span></td>
+<td lang=""><span><span>1 Gbps</span></span></td>
+<td lang=""><span><span>100米</span></span></td>
+</tr>
+<tr class="e">
+<td lang=""><span><span>10 GBase-T</span></span></td>
+<td lang=""><span><span>Cat 6或更高</span></span></td>
+<td lang=""><span><span>10 Gbps</span></span></td>
+<td lang=""><span><span>100 m（6a或7號貓）</span></span></td>
+</tr>
+<tr>
+<td lang=""><span><span>1000BaseLX</span></span></td>
+<td lang=""><span><span>MMF / SMF</span></span></td>
+<td lang=""><span><span>1 Gbps</span></span></td>
+<td lang=""><span><span>5公里</span></span></td>
+</tr>
+<tr class="e">
+<td lang=""><span><span>1000BaseLH</span></span></td>
+<td lang=""><span><span>SMF</span></span></td>
+<td lang=""><span><span>1 Gbps</span></span></td>
+<td lang=""><span><span>10公里</span></span></td>
+</tr>
+<tr>
+<td lang=""><span><span>1000BaseZX</span></span></td>
+<td lang=""><span><span>SMF</span></span></td>
+<td lang=""><span><span>1 Gbps</span></span></td>
+<td lang=""><span><span>70公里</span></span></td>
+</tr>
+</tbody>
+</table>
+<p id="N1072E" lang=""><span><span>在討論數據流和速度時，所指的兩個術語是帶寬和吞吐量。</span><span>這兩個術語通常可以互換使用，它們是不同的，需要理解。</span><span>簡而言之，帶寬是給定標準的理論最大值，而吞吐量是實際情況下的實際潛力。</span><span>許多因素會影響實際吞吐量，例如半雙工與全雙工，電纜長度和質量。</span><span>帶寬和吞吐量均以每秒比特數（bps）以及前綴K（千比特），M（兆比特）或G（千兆比特）來衡量。</span><span>每條以太網類別（貓）電纜均支持不同的以太網標準，從而確定帶寬容量或最大吞吐量。</span><span>下表顯示了根據以太網類型的帶寬。</span></span></p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th lang=""><span><span>以太網類型</span></span></th>
+<th lang=""><span><span>帶寬容量</span></span></th>
+<th lang=""><span><span>描述</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td lang=""><span><span>乙太網路</span></span></td>
+<td lang=""><span><span>10 Mbps</span></span></td>
+<td lang=""><span><span>每秒一千萬位</span></span></td>
+</tr>
+<tr class="e">
+<td lang=""><span><span>快速以太網</span></span></td>
+<td lang=""><span><span>100 Mbps的</span></span></td>
+<td lang=""><span><span>每秒1億位</span></span></td>
+</tr>
+<tr>
+<td lang=""><span><span>千兆以太網</span></span></td>
+<td lang=""><span><span>1000 Mbps或1 Gbps</span></span></td>
+<td lang=""><span><span>每秒10億位</span></span></td>
+</tr>
+<tr class="e">
+<td lang=""><span><span>40 Gb以太網</span></span></td>
+<td lang=""><span><span>40 Gbps</span></span></td>
+<td lang=""><span><span>每秒400億位</span></span></td>
+</tr>
+<tr>
+<td lang=""><span><span>100 Gb以太網</span></span></td>
+<td lang=""><span><span>100 Gbps</span></span></td>
+<td lang=""><span><span>每秒1000億位</span></span></td>
+</tr>
+</tbody>
+</table>
+<h3><span><span><br/>Planning a Basic Network Connection Using 100 1000BaseT 使用100  1000BaseT規劃基本的網絡連接</span></span></h3>
+<p id="N10688" lang="">Now that you have a general understanding of networking hardware, application of standards for LANs (local area networks) and WANs (wide area networks), and the limitations of the media used, you should be able to plan adding a network node to an already existing network. For example, you could add a new computer to your company’s wired LAN. In such situations, the majority of the hardware installation is plug and play (PnP), but you still have to know that the hardware and media chosen are correct, configure software settings for network access, and verify the new hardware will function properly to allow user access to all network resources.</p>
+<p id="N1068B" lang="">Current technology in most small office/home office (SOHO) environments will have auto-sensing networking hardware. There are older switches and routers that still remain in some networks that do not have the ability to run at 100/1000BaseT, so check your network documentation!</p>
+<div class="section" id="N1068E">
+<div class="sectionContain">
+<h2 contenteditable="true" lang=""><span title="Quick scroll up">Media</span></h2>
+<p id="N10695" lang="">Installing a wired connection onto the network means knowing if the NIC (network interface card) of the device can also auto-negotiate throughput based on the cable media used. Again, new or current technology should be auto-sensing and auto-negotiating (speed, duplex mode and other network parameters). The most important decision for the technician is selecting the correct type of Ethernet cable to connect the device. Recall that the cable standards will restrict distance as well as throughput. A cat 5 cable was standard for 100BaseT but will limit throughput to 100 Mbps so you must use cat 5e or cat 6 if you are trying to achieve 1000BaseT (1 Gbps).</p>
+</div>
+</div>
+<div class="section" id="N1069A">
+<div class="sectionContain">
+<h2 contenteditable="true" lang=""><span title="Quick scroll up">Distance</span></h2>
+<p id="N106A1" lang="">Most current SOHO environments will have Ethernet wall jacks internally connecting to the next network device, be it a switch or a hub. But, if there is not a connection already present, you must remember that all copper-based Ethernet cable is limited to 100 meters. Do not run the wire in an area where the cabling can cause a safety hazard, become damaged due to environmental conditions, or suffer from electromagnetic interference (EMI).</p>
+</div>
+</div>
+<div class="section" id="N106A6">
+<div class="sectionContain">
+<h2 contenteditable="true" lang=""><span title="Quick scroll up">Verify Connectivity</span></h2>
+<p id="N106AD" lang="">After the machine is connected and powered on (assuming Windows 7 or later), watch the system tray after boot-up to see if there is a wired network icon. The standard Windows 7 icons are:</p>
+<div class="imagewrap"><span class="image"><img alt="Three icons are displayed. The first icon-- labeled: connected --  is a computer screen with a plug and cable to the left. The second icon, labeled disconnected, is the same as the first icon but has a yellow triangle with an exclamation point inside it. The third icon, labeled disabled, is the same as the first icon with a red X." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image7.png" title="Three icons are displayed. The first icon-- labeled: connected --  is a computer screen with a plug and cable to the left. The second icon, labeled disconnected, is the same as the first icon but has a yellow triangle with an exclamation point inside it. The third icon, labeled disabled, is the same as the first icon with a red X." width="500"/></span>
+<p id="N106B7" lang="">Wired network icons. Images used under CC-BY license from Russell Burchill.</p>
+</div>
+<p id="N106BB" lang="">Access the “network sharing center” to select the type of network access you need to have and add any devices required for the node (e.g., a printer). Verify access by opening the browser or using a command line tool to verify connectivity and addressing.</p>
+<p id="N10688" lang=""><span>既然您已經對網絡硬件，LAN（局域網）和WAN（廣域網）的標準的應用以及所用媒體的限制有了一般的了解，那麼您應該能夠計劃將網絡節點添加到已經現有網絡。例如，您可以將新計算機添加到公司的有線局域網中。在這種情況下，大多數硬件安裝都是即插即用（PnP），但您仍然必須知道所選的硬件和媒體是正確的，配置用於網絡訪問的軟件設置，並驗證新硬件是否正常運行以允許用戶訪問所有網絡資源。</span></p>
+<p id="N1068B" lang=""><span><span>大多數小型辦公室/家庭辦公室（SOHO）環境中的當前技術都將具有自動感應網絡硬件。</span><span>在某些網絡中仍然存在一些較舊的交換機和路由器，這些交換機和路由器仍無法在100 / 1000BaseT上運行，因此請查看您的網絡文檔！</span></span></p>
+<div class="section" id="N1068E">
+<div class="sectionContain">
+<h2 contenteditable="true" lang=""><span title="快速向上滾動"><span><span>媒體</span></span></span></h2>
+<p id="N10695" lang=""><span><span>在網絡上安裝有線連接意味著要知道設備的NIC（網絡接口卡）是否還可以根據所使用的電纜介質自動協商吞吐量。</span><span>同樣，新的或當前的技術應該是自動感應和自動協商（速度，雙工模式和其他網絡參數）。</span><span>對於技術人員而言，最重要的決定是選擇正確的以太網電纜類型來連接設備。</span><span>回想一下，電纜標準將限制距離以及吞吐量。</span><span>Cat 5電纜是100BaseT的標準配置，但會將吞吐量限制為100 Mbps，因此，如果要實現1000BaseT（1 Gbps），則必須使用Cat 5e或Cat 6。</span></span></p>
+</div>
+</div>
+<div class="section" id="N1069A">
+<div class="sectionContain">
+<h2 contenteditable="true" lang=""><span title="快速向上滾動"><span><span>距離</span></span></span></h2>
+<p id="N106A1" lang=""><span><span>當前大多數SOHO環境將在內部將以太網牆壁插孔連接到下一個網絡設備，無論是交換機還是集線器。</span><span>但是，如果尚不存在連接，則必須記住所有基於銅纜的以太網電纜限制為100米。</span><span>請勿在可能會導致安全隱患，因環境條件而損壞電纜或遭受電磁干擾（EMI）的區域中佈線。</span></span></p>
+</div>
+</div>
+<div class="section" id="N106A6">
+<div class="sectionContain">
+<h2 contenteditable="true" lang=""><span title="快速向上滾動"><span><span>驗證連接性</span></span></span></h2>
+<p id="N106AD" lang=""><span><span>連接機器並打開電源後（假設使用Windows 7或更高版本），啟動後請查看系統托盤，以查看是否存在有線網絡圖標。</span><span>Windows 7的標準圖標是：</span></span></p>
+<div class="imagewrap"><span class="image"><img alt="顯示三個圖標。 第一個圖標（標記為：已連接）是計算機屏幕，左側帶有插頭和電纜。 標記為斷開連接的第二個圖標與第一個圖標相同，但是帶有一個黃色三角形，其中帶有感嘆號。 標為“已禁用”的第三個圖標與帶有紅色X的第一個圖標相同。" class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image7.png" title="顯示三個圖標。 第一個圖標（標記為：已連接）是計算機屏幕，左側帶有插頭和電纜。 標記為斷開連接的第二個圖標與第一個圖標相同，但是帶有一個黃色三角形，其中帶有感嘆號。 標為“已禁用”的第三個圖標與帶有紅色X的第一個圖標相同。" width="500"/></span>
+<p id="N106B7" lang=""><span><span>有線的網絡圖標。</span><span>圖片由Russell Burchill根據CC-BY許可使用。</span></span></p>
+</div>
+<p id="N106BB" lang=""><span><span>訪問“網絡共享中心”以選擇所需的網絡訪問類型，並添加該節點所需的任何設備（例如打印機）。</span><span>通過打開瀏覽器或使用命令行工具來驗證訪問權限，以驗證連接性和地址。</span></span></p>
+</div>
+</div>
+</div>
+</div>
+<h3><span><span>Differentiating Between Ethernet and TCP IP 區分以太網和TCP   IP</span></span></h3>
+<p id="N10688" lang="">As an A+ certified technician, you will be introduced to the basics of computer networking, which is further covered when learning the CompTIA Net+ standards. Although CompTIA A+ does not test on the open systems interconnection model (OSI model), it is a theoretical model that is the basis for the way data travels through computer networks. When you click on an icon and connect to the Internet through a browser such as Google Chrome, Mozilla Firefox, or Internet Explorer, a request to connect is sent through a series of steps from the application layer down to the physical layer. All data physically enters and exits a computer node (client, server, or printer) through a network interface card (NIC) based on the type of medium being used (wireless, copper, or fiber-optic). The data packets are represented and interpreted using the binary number system.</p>
+<p id="N10688" lang=""><span>作為A +認證的技術人員，將向您介紹計算機網絡的基礎知識，在學習CompTIA Net +標準時將進一步介紹這些知識。儘管CompTIA A +並未在開放系統互連模型（OSI模型）上進行測試，但它是一種理論模型，是數據在計算機網絡中傳輸的基礎。當您單擊圖標並通過瀏覽器（例如Google Chrome，Mozilla Firefox或Internet Explorer）連接到Internet時，連接請求將通過從應用程序層到物理層的一系列步驟發送。根據使用的介質類型（無線，銅纜或光纖），所有數據都通過網絡接口卡（NIC）物理地進入和退出計算機節點（客戶端，服務器或打印機）。</span></p>
+<div class="imagewrap"><span class="image"><img class="popimg" height="411" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image16.png" width="540"/></span>
+<p id="N10690" lang="">Image used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/File:OSIModel.jpg#/media/File:OSIModel.jpg" id="_i_1" lang="" target="_blank">Wikimedia Commons</a>.</p>
+<p lang=""><span>在</span><a href="https://commons.wikimedia.org/wiki/File:OSIModel.jpg#/media/File:OSIModel.jpg" id="_i_1" lang="" target="_blank"><span><span>Wikimedia Commons的</span></span></a><span><span>CC-BY-SA許可下使用的圖像</span><span>。</span></span></p>
+</div>
+<div class="section" id="N10699">
+<div class="sectionContain">
+<h2 contenteditable="true" lang=""><span title="Quick scroll up">Protocols 規約</span></h2>
+<p id="N106A0" lang="">In computer networking, a protocol is a set of communication rules by which data communication occurs. The popularity of Ethernet is based on the standardization of protocols and ability to use the TCP/IP suite to carry data throughout a variety of hardware devices.</p>
+<p lang=""><span>在計算機網絡中，協議是通過其進行數據通信的一組通信規則。</span><span>以太網的普及是基於協議的標準化以及使用TCP / IP套件在各種硬件設備中傳輸數據的能力。</span></p>
+</div>
+</div>
+<div class="section" id="N106A5">
+<div class="sectionContain">
+<h2 contenteditable="true" lang=""><span title="Quick scroll up">Ethernet 乙太網路</span></h2>
+<p id="N106AC" lang="">Ethernet is defined by the IEEE 802.3 specification, which sets the standard and interoperability between devices, allowing communication over computer networks. These specifications control how data physically travels between nodes on both the physical layer and the data link layer through media access control (MAC). The hardware controlled by these specifications include NICs, wiring (i.e., cat 5, 5e, and 6) including the RJ-45 connectors, switches, and hubs.</p>
+<p lang=""><span>以太網由IEEE 802.3規範定義，該規範設置了設備之間的標準和互操作性，從而允許通過計算機網絡進行通信。</span><span>這些規範通過媒體訪問控制（MAC）控制數據在物理層和數據鏈路層上的節點之間的物理傳輸方式。</span><span>這些規範所控制的硬件包括NIC，包括RJ-45連接器，交換機和集線器的佈線（即Cat 5、5e和6）。</span></p>
+</div>
+</div>
+<div class="section" id="N106B1">
+<div class="sectionContain">
+<h2 contenteditable="true" lang=""><span title="Quick scroll up">TCP IP TCP   IP</span></h2>
+<p id="N106B8" lang="">Whereas Ethernet controls the physical data, transmission control protocol and Internet protocol (TCP/IP) is a suite of protocols that operate logically throughout the different layers of the OSI model as well as in the TCP/IP model.</p>
+<p id="N106B8" lang=""><span>以太網控制物理數據，而傳輸控制協議和Internet協議（TCP / IP）是一套協議，可以在OSI模型的不同層以及TCP / IP模型中進行邏輯操作。</span></p>
+<div class="imagewrap"></div>
+<div class="imagewrap"><span class="image"><img class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image17.png"/></span>
+<p id="N106C0" lang="">Image used under CC-BY license from Russell Burchill.</p>
+<p lang=""><span>圖片由Russell Burchill根據CC-BY許可使用。</span></p>
+</div>
+<p id="N106C4" lang="">A good analogy to help understand how Ethernet uses TCP/IP to transport data is to consider the old pneumatic tube systems used by banks. The tube and the carrier that the deposit envelope is placed in represent Ethernet. The envelope and the currency represent a protocol from the TCP/IP suite used throughout different layers (see additional information<span> </span><a href="http://superuser.com/questions/206431/ethernet-vs-tcp-vs-ip" id="_i_3" lang="" target="_blank">here</a>).</p>
+<p lang=""><span>一個很好的類比可以幫助理解以太網如何使用TCP / IP傳輸數據，是考慮銀行使用的舊式氣動系統。放置存款信封的管子和載體代表以太網。信封和貨幣表示不同層使用的TCP / IP套件中的協議（請參見</span><a href="http://superuser.com/questions/206431/ethernet-vs-tcp-vs-ip" id="_i_3" lang="" target="_blank"><span><span>此處的</span></span></a><span><span>其他信息</span><span>）。</span></span></p>
+</div>
+</div>
