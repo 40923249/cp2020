@@ -226,7 +226,7 @@
 </ul>
 <p id="N106A9" lang=""><span><span>與客戶服務打交道時，我們始終希望超越客戶的期望。</span><span>完成此任務的關鍵一步是設置並滿足您為客戶提供的時間表。</span><span>您需要告訴客戶維修需要多長時間，以及是否值得花費維修費用。</span><span>如果客戶要求您更換一台使用了四年的舊筆記本電腦的筆記本電腦屏幕壞了，那麼客戶只需購買一台新筆記本電腦可能更具成本效益。</span><span>（注意：筆記本電腦維修的經驗法則是，如果筆記本電腦維修費用佔新筆記本電腦成本的50％或以上，則建議更換。）</span></span></p>
 <p id="N106AC" lang=""><span><span>如果有可用的選件，請在邏輯上將其與估計的成本，維修時間和工作站的未來服務時間一起提供。</span><span>向客戶提供服務時，請始終提供有關所提供服務的文檔。</span></span></p>
-<h2><span><span>PCH 12 /Ethernet Standards PCH 12 /以太網標準</span></span></h2>
+<h2><span><span>PCH 12  Ethernet Standards PCH 12  以太網標準</span></span></h2>
 <h3><span><span>Ethernet Standards 以太網標準</span></span></h3>
 <h4><span><span>Overview 總覽</span></span></h4>
 <p><span><span>In this module, we are going to discuss how the various Ethernet standards developed over time. We will also discuss why there is a need for these standards and the effect of these standards on the industry. In addition, we are going to cover various types of network media standards. We will cover 10Base-T (802.3i, 1990) as well as 100Base-T and 1000Base-T (1GBASE-T or 1 GigE) Ethernet standards, which are most commonly found in current office networks. We will discover how to plan a basic network connection using 100BaseT. Finally, we will cover differences between Ethernet and TCP/IP.</span></span></p>
@@ -244,7 +244,7 @@
 <p id="N10699" lang=""><span><span>最初被指定為10Base5的IEEE 802.3標準Thicknet提供的最大帶寬為10Mbps，並且距離限制為500米。</span><span>Thinnet或IEEE 10Base2使用較小類型的同軸電纜，並且提供的最大帶寬為10 Mbps，但限制為185米。</span><span>最終，該行業從同軸電纜過渡到非屏蔽雙絞線電纜。</span></span></p>
 <p id="N1069C" lang=""><span><span>雙絞線電纜（稱為10BaseT）與3類電纜提供了相同的10 Mbps半雙工最大帶寬，但由於缺少同軸電纜提供的額外屏蔽，因此距離限制為100米。</span><span>儘管衰減增加（信號強度隨著距離的增加而損失），但由於易於安裝且總體成本較低，網絡設計人員仍選擇雙絞線佈線。</span><span>同軸電纜不受歡迎，並且802.3以太網標準繼續發展，雙絞線佈線類別的數據速率更快。</span></span></p>
 <p id="N1069F" lang=""><span><span>以太網必須回答的設計問題是設備應如何訪問網絡。</span><span>單線對上半雙工傳輸（TX或RX）的性質意味著即將發生衝突。</span><span>訪問應該是確定性和有序的，還是基於競爭的且混亂的？</span><span>較早的基於環的網絡（例如令牌環）是在必須有順序的前提下開發的：每台機器都將等待其輪流發送其數據，直到接收到圍繞環傳遞的電子令牌為止。</span><span>這類似於美洲原住民和其他原住民部落使用的“說話棒”或“發言人的工作人員”，其中工作人員（令牌）使該人員可以發言，其餘的小組成員則可以收聽。</span><span>另一方面，以太網以基於競爭的模型為前提。</span><span>這更加混亂，並且允許網絡上的任何設備在其希望的任何時間進行傳輸。</span><span>這種類型的原理存在的問題是，要弄清楚如何防止兩個設備同時傳輸並導致數據衝突。</span><span>對於以太網，答案是以一種稱為載波偵聽多路訪問/衝突檢測（CSMA / CD）的媒體訪問控制方法的形式出現的。</span></span></p>
-<h3><span><span>Carrier Sense Multiple Access/Collision Detect 載波偵聽多路訪問/衝突檢測</span></span></h3>
+<h3><span><span>Carrier Sense Multiple Access Collision Detect 載波偵聽多路訪問 衝突檢測</span></span></h3>
 <p id="N10698" lang="">The nature of half-duplex transmission brought about the need for CSMA/CD, which works by allowing all devices to transmit data whenever they wish. The carrier sense portion means that the device “listens” to the network first to find a “break” in the conversation. If the device doesn’t hear other devices transmitting, then it begins its transmission. Multiple access refers to every device having equal access to the network at all times. This is unlike the token ring network in which each device had to wait for the signal (token) before transmitting. Finally, we have collision detection as part of the CSMA/CD control method. If, by chance, two devices both were ready to transmit, they “listened” to the network for a “lull” in the conversation, and both started transmitting at the same time, the devices are able to detect that they both transmitted at the same time and caused a collision.</p>
 <p id="N1069B" lang="">The image below depicts both the CSMA/CD and CSMA/CA simplified algorithm. The left branch is CSMA/CD used by half-duplex Ethernet and the right branch is CSMA/CA used by 802.11 wireless LAN, which is also half-duplex.</p>
 <p id="N10698" lang=""><span>半雙工傳輸的性質帶來了對CSMA / CD的需求，它允許所有設備在需要時傳輸數據。運營商感知部分意味著設備首先“監聽”網絡以在會話中找到“中斷”。如果該設備聽不到其他設備的傳輸，則它將開始傳輸。多路訪問是指每台設備始終具有對網絡的平等訪問權限。這與令牌環網絡不同，在令牌環網絡中，每個設備都必須在發送之前等待信號（令牌）。最後，我們將碰撞檢測作為CSMA / CD控制方法的一部分。如果碰巧有兩個設備都準備好進行傳輸，則它們會在通話中“偵聽”網絡中的“失敗”，並且都同時開始傳輸，</span></p>
@@ -502,7 +502,7 @@
 </tr>
 </tbody>
 </table>
-<h3><span><span><br/>Planning a Basic Network Connection Using 100/1000BaseT 使用100 / 1000BaseT規劃基本的網絡連接</span></span></h3>
+<h3><span><span><br/>Planning a Basic Network Connection Using 100 1000BaseT 使用100  1000BaseT規劃基本的網絡連接</span></span></h3>
 <p id="N10688" lang="">Now that you have a general understanding of networking hardware, application of standards for LANs (local area networks) and WANs (wide area networks), and the limitations of the media used, you should be able to plan adding a network node to an already existing network. For example, you could add a new computer to your company’s wired LAN. In such situations, the majority of the hardware installation is plug and play (PnP), but you still have to know that the hardware and media chosen are correct, configure software settings for network access, and verify the new hardware will function properly to allow user access to all network resources.</p>
 <p id="N1068B" lang="">Current technology in most small office/home office (SOHO) environments will have auto-sensing networking hardware. There are older switches and routers that still remain in some networks that do not have the ability to run at 100/1000BaseT, so check your network documentation!</p>
 <div class="section" id="N1068E">
@@ -551,7 +551,7 @@
 </div>
 </div>
 </div>
-<h3><span><span>Differentiating Between Ethernet and TCP/IP 區分以太網和TCP / IP</span></span></h3>
+<h3><span><span>Differentiating Between Ethernet and TCP IP 區分以太網和TCP   IP</span></span></h3>
 <p id="N10688" lang="">As an A+ certified technician, you will be introduced to the basics of computer networking, which is further covered when learning the CompTIA Net+ standards. Although CompTIA A+ does not test on the open systems interconnection model (OSI model), it is a theoretical model that is the basis for the way data travels through computer networks. When you click on an icon and connect to the Internet through a browser such as Google Chrome, Mozilla Firefox, or Internet Explorer, a request to connect is sent through a series of steps from the application layer down to the physical layer. All data physically enters and exits a computer node (client, server, or printer) through a network interface card (NIC) based on the type of medium being used (wireless, copper, or fiber-optic). The data packets are represented and interpreted using the binary number system.</p>
 <p id="N10688" lang=""><span>作為A +認證的技術人員，將向您介紹計算機網絡的基礎知識，在學習CompTIA Net +標準時將進一步介紹這些知識。儘管CompTIA A +並未在開放系統互連模型（OSI模型）上進行測試，但它是一種理論模型，是數據在計算機網絡中傳輸的基礎。當您單擊圖標並通過瀏覽器（例如Google Chrome，Mozilla Firefox或Internet Explorer）連接到Internet時，連接請求將通過從應用程序層到物理層的一系列步驟發送。根據使用的介質類型（無線，銅纜或光纖），所有數據都通過網絡接口卡（NIC）物理地進入和退出計算機節點（客戶端，服務器或打印機）。</span></p>
 <div class="imagewrap"><span class="image"><img class="popimg" height="411" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image16.png" width="540"/></span>
@@ -574,7 +574,7 @@
 </div>
 <div class="section" id="N106B1">
 <div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="Quick scroll up">TCP/IP TCP / IP</span></h2>
+<h2 contenteditable="true" lang=""><span title="Quick scroll up">TCP IP TCP   IP</span></h2>
 <p id="N106B8" lang="">Whereas Ethernet controls the physical data, transmission control protocol and Internet protocol (TCP/IP) is a suite of protocols that operate logically throughout the different layers of the OSI model as well as in the TCP/IP model.</p>
 <p id="N106B8" lang=""><span>以太網控制物理數據，而傳輸控制協議和Internet協議（TCP / IP）是一套協議，可以在OSI模型的不同層以及TCP / IP模型中進行邏輯操作。</span></p>
 <div class="imagewrap"></div>

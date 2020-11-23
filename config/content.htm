@@ -505,43 +505,39 @@
 <h3><span><span><br/>Planning a Basic Network Connection Using 100 1000BaseT 使用100  1000BaseT規劃基本的網絡連接</span></span></h3>
 <p id="N10688" lang="">Now that you have a general understanding of networking hardware, application of standards for LANs (local area networks) and WANs (wide area networks), and the limitations of the media used, you should be able to plan adding a network node to an already existing network. For example, you could add a new computer to your company’s wired LAN. In such situations, the majority of the hardware installation is plug and play (PnP), but you still have to know that the hardware and media chosen are correct, configure software settings for network access, and verify the new hardware will function properly to allow user access to all network resources.</p>
 <p id="N1068B" lang="">Current technology in most small office/home office (SOHO) environments will have auto-sensing networking hardware. There are older switches and routers that still remain in some networks that do not have the ability to run at 100/1000BaseT, so check your network documentation!</p>
+<h4>Media</h4>
 <div class="section" id="N1068E">
 <div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="Quick scroll up">Media</span></h2>
 <p id="N10695" lang="">Installing a wired connection onto the network means knowing if the NIC (network interface card) of the device can also auto-negotiate throughput based on the cable media used. Again, new or current technology should be auto-sensing and auto-negotiating (speed, duplex mode and other network parameters). The most important decision for the technician is selecting the correct type of Ethernet cable to connect the device. Recall that the cable standards will restrict distance as well as throughput. A cat 5 cable was standard for 100BaseT but will limit throughput to 100 Mbps so you must use cat 5e or cat 6 if you are trying to achieve 1000BaseT (1 Gbps).</p>
+<h4>Distance</h4>
 </div>
 </div>
 <div class="section" id="N1069A">
 <div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="Quick scroll up">Distance</span></h2>
 <p id="N106A1" lang="">Most current SOHO environments will have Ethernet wall jacks internally connecting to the next network device, be it a switch or a hub. But, if there is not a connection already present, you must remember that all copper-based Ethernet cable is limited to 100 meters. Do not run the wire in an area where the cabling can cause a safety hazard, become damaged due to environmental conditions, or suffer from electromagnetic interference (EMI).</p>
+<h4>Verify Connectivity</h4>
+<p lang="">After the machine is connected and powered on (assuming Windows 7 or later), watch the system tray after boot-up to see if there is a wired network icon. The standard Windows 7 icons are:</p>
 </div>
 </div>
 <div class="section" id="N106A6">
 <div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="Quick scroll up">Verify Connectivity</span></h2>
-<p id="N106AD" lang="">After the machine is connected and powered on (assuming Windows 7 or later), watch the system tray after boot-up to see if there is a wired network icon. The standard Windows 7 icons are:</p>
 <div class="imagewrap"><span class="image"><img alt="Three icons are displayed. The first icon-- labeled: connected --  is a computer screen with a plug and cable to the left. The second icon, labeled disconnected, is the same as the first icon but has a yellow triangle with an exclamation point inside it. The third icon, labeled disabled, is the same as the first icon with a red X." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image7.png" title="Three icons are displayed. The first icon-- labeled: connected --  is a computer screen with a plug and cable to the left. The second icon, labeled disconnected, is the same as the first icon but has a yellow triangle with an exclamation point inside it. The third icon, labeled disabled, is the same as the first icon with a red X." width="500"/></span>
 <p id="N106B7" lang="">Wired network icons. Images used under CC-BY license from Russell Burchill.</p>
 </div>
 <p id="N106BB" lang="">Access the “network sharing center” to select the type of network access you need to have and add any devices required for the node (e.g., a printer). Verify access by opening the browser or using a command line tool to verify connectivity and addressing.</p>
 <p id="N10688" lang=""><span>既然您已經對網絡硬件，LAN（局域網）和WAN（廣域網）的標準的應用以及所用媒體的限制有了一般的了解，那麼您應該能夠計劃將網絡節點添加到已經現有網絡。例如，您可以將新計算機添加到公司的有線局域網中。在這種情況下，大多數硬件安裝都是即插即用（PnP），但您仍然必須知道所選的硬件和媒體是正確的，配置用於網絡訪問的軟件設置，並驗證新硬件是否正常運行以允許用戶訪問所有網絡資源。</span></p>
 <p id="N1068B" lang=""><span><span>大多數小型辦公室/家庭辦公室（SOHO）環境中的當前技術都將具有自動感應網絡硬件。</span><span>在某些網絡中仍然存在一些較舊的交換機和路由器，這些交換機和路由器仍無法在100 / 1000BaseT上運行，因此請查看您的網絡文檔！</span></span></p>
-<div class="section" id="N1068E">
-<div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="快速向上滾動"><span><span>媒體</span></span></span></h2>
-<p id="N10695" lang=""><span><span>在網絡上安裝有線連接意味著要知道設備的NIC（網絡接口卡）是否還可以根據所使用的電纜介質自動協商吞吐量。</span><span>同樣，新的或當前的技術應該是自動感應和自動協商（速度，雙工模式和其他網絡參數）。</span><span>對於技術人員而言，最重要的決定是選擇正確的以太網電纜類型來連接設備。</span><span>回想一下，電纜標準將限制距離以及吞吐量。</span><span>Cat 5電纜是100BaseT的標準配置，但會將吞吐量限制為100 Mbps，因此，如果要實現1000BaseT（1 Gbps），則必須使用Cat 5e或Cat 6。</span></span></p>
-</div>
-</div>
+<h4><span><span>媒體</span></span></h4>
+<p lang=""><span>在網絡上安裝有線連接意味著要知道設備的NIC（網絡接口卡）是否還可以根據所使用的電纜介質自動協商吞吐量。</span><span>同樣，新的或當前的技術應該是自動感應和自動協商（速度，雙工模式和其他網絡參數）。</span><span>對於技術人員而言，最重要的決定是選擇正確的以太網電纜類型來連接設備。</span><span>回想一下，電纜標準將限制距離以及吞吐量。</span><span>Cat 5電纜是100BaseT的標準配置，但會將吞吐量限制為100 Mbps，因此，如果要實現1000BaseT（1 Gbps），則必須使用Cat 5e或Cat 6。</span></p>
+<h4><span>距離</span></h4>
 <div class="section" id="N1069A">
 <div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="快速向上滾動"><span><span>距離</span></span></span></h2>
 <p id="N106A1" lang=""><span><span>當前大多數SOHO環境將在內部將以太網牆壁插孔連接到下一個網絡設備，無論是交換機還是集線器。</span><span>但是，如果尚不存在連接，則必須記住所有基於銅纜的以太網電纜限制為100米。</span><span>請勿在可能會導致安全隱患，因環境條件而損壞電纜或遭受電磁干擾（EMI）的區域中佈線。</span></span></p>
+<h4>驗證連接性</h4>
 </div>
 </div>
 <div class="section" id="N106A6">
 <div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="快速向上滾動"><span><span>驗證連接性</span></span></span></h2>
 <p id="N106AD" lang=""><span><span>連接機器並打開電源後（假設使用Windows 7或更高版本），啟動後請查看系統托盤，以查看是否存在有線網絡圖標。</span><span>Windows 7的標準圖標是：</span></span></p>
 <div class="imagewrap"><span class="image"><img alt="顯示三個圖標。 第一個圖標（標記為：已連接）是計算機屏幕，左側帶有插頭和電纜。 標記為斷開連接的第二個圖標與第一個圖標相同，但是帶有一個黃色三角形，其中帶有感嘆號。 標為“已禁用”的第三個圖標與帶有紅色X的第一個圖標相同。" class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image7.png" title="顯示三個圖標。 第一個圖標（標記為：已連接）是計算機屏幕，左側帶有插頭和電纜。 標記為斷開連接的第二個圖標與第一個圖標相同，但是帶有一個黃色三角形，其中帶有感嘆號。 標為“已禁用”的第三個圖標與帶有紅色X的第一個圖標相同。" width="500"/></span>
 <p id="N106B7" lang=""><span><span>有線的網絡圖標。</span><span>圖片由Russell Burchill根據CC-BY許可使用。</span></span></p>
@@ -557,24 +553,24 @@
 <div class="imagewrap"><span class="image"><img class="popimg" height="411" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH12/webcontent/PCH12/image16.png" width="540"/></span>
 <p id="N10690" lang="">Image used under CC-BY-SA license from<span> </span><a href="https://commons.wikimedia.org/wiki/File:OSIModel.jpg#/media/File:OSIModel.jpg" id="_i_1" lang="" target="_blank">Wikimedia Commons</a>.</p>
 <p lang=""><span>在</span><a href="https://commons.wikimedia.org/wiki/File:OSIModel.jpg#/media/File:OSIModel.jpg" id="_i_1" lang="" target="_blank"><span><span>Wikimedia Commons的</span></span></a><span><span>CC-BY-SA許可下使用的圖像</span><span>。</span></span></p>
+<h4><span><span>Protocols 規約</span></span></h4>
 </div>
 <div class="section" id="N10699">
 <div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="Quick scroll up">Protocols 規約</span></h2>
 <p id="N106A0" lang="">In computer networking, a protocol is a set of communication rules by which data communication occurs. The popularity of Ethernet is based on the standardization of protocols and ability to use the TCP/IP suite to carry data throughout a variety of hardware devices.</p>
 <p lang=""><span>在計算機網絡中，協議是通過其進行數據通信的一組通信規則。</span><span>以太網的普及是基於協議的標準化以及使用TCP / IP套件在各種硬件設備中傳輸數據的能力。</span></p>
+<h4><span>Ethernet 乙太網路</span></h4>
 </div>
 </div>
 <div class="section" id="N106A5">
 <div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="Quick scroll up">Ethernet 乙太網路</span></h2>
 <p id="N106AC" lang="">Ethernet is defined by the IEEE 802.3 specification, which sets the standard and interoperability between devices, allowing communication over computer networks. These specifications control how data physically travels between nodes on both the physical layer and the data link layer through media access control (MAC). The hardware controlled by these specifications include NICs, wiring (i.e., cat 5, 5e, and 6) including the RJ-45 connectors, switches, and hubs.</p>
 <p lang=""><span>以太網由IEEE 802.3規範定義，該規範設置了設備之間的標準和互操作性，從而允許通過計算機網絡進行通信。</span><span>這些規範通過媒體訪問控制（MAC）控制數據在物理層和數據鏈路層上的節點之間的物理傳輸方式。</span><span>這些規範所控制的硬件包括NIC，包括RJ-45連接器，交換機和集線器的佈線（即Cat 5、5e和6）。</span></p>
+<h4><span>TCP IP TCP   IP</span></h4>
 </div>
 </div>
 <div class="section" id="N106B1">
 <div class="sectionContain">
-<h2 contenteditable="true" lang=""><span title="Quick scroll up">TCP IP TCP   IP</span></h2>
 <p id="N106B8" lang="">Whereas Ethernet controls the physical data, transmission control protocol and Internet protocol (TCP/IP) is a suite of protocols that operate logically throughout the different layers of the OSI model as well as in the TCP/IP model.</p>
 <p id="N106B8" lang=""><span>以太網控制物理數據，而傳輸控制協議和Internet協議（TCP / IP）是一套協議，可以在OSI模型的不同層以及TCP / IP模型中進行邏輯操作。</span></p>
 <div class="imagewrap"></div>
