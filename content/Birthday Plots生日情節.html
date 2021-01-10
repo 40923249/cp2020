@@ -1,0 +1,272 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923249 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923249 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li class='has-children'><a href='PCH 3  Customer Relations 客戶關係.html'>PCH 3  Customer Relations 客戶關係</a><ul class='dropdown'><li><a href='Overview 總覽.html'>Overview 總覽</a><li><a href='Operational Procedures  Communication Methods and 操作程序 溝通方法和專業精神.html'>Operational Procedures  Communication Methods and 操作程序 溝通方法和專業精神</a><li><a href='Professionalism 有效聆聽.html'>Professionalism 有效聆聽</a><li><a href='Taking Ownership取得所有權.html'>Taking Ownership取得所有權</a><li><a href='Remain Courteous and Professional保持禮貌和專業.html'>Remain Courteous and Professional保持禮貌和專業</a><li><a href='Problem Resolution and Follow Up問題解決與跟進.html'>Problem Resolution and Follow Up問題解決與跟進</a><li><a href='Proper Treatment of a Customers Property正確對待客戶財產.html'>Proper Treatment of a Customers Property正確對待客戶財產</a><li><a href='Putting it All Together放在一起.html'>Putting it All Together放在一起</a></li></ul><li class='has-children'><a href='PCH 12  Ethernet Standards PCH 12  以太網標準.html'>PCH 12  Ethernet Standards PCH 12  以太網標準</a><ul class='dropdown'><li><a href='Ethernet Standards 以太網標準.html'>Ethernet Standards 以太網標準</a><li><a href='Ethernet Technology 以太網技術.html'>Ethernet Technology 以太網技術</a><li><a href='Carrier Sense Multiple Access Collision Detect 載波偵聽多路訪問 衝突檢測.html'>Carrier Sense Multiple Access Collision Detect 載波偵聽多路訪問 衝突檢測</a><li><a href='Evolution of Standards 標準的演變.html'>Evolution of Standards 標準的演變</a><li><a href='Planning a Basic Network Connection Using 100 1000BaseT 使用100  1000BaseT規劃基本的網絡連接.html'>Planning a Basic Network Connection Using 100 1000BaseT 使用100  1000BaseT規劃基本的網絡連接</a><li><a href='Differentiating Between Ethernet and TCP IP 區分以太網和TCP   IP.html'>Differentiating Between Ethernet and TCP IP 區分以太網和TCP   IP</a></li></li></ul></ul><li><a href='HW2.html'>HW2</a><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='Guess Letters 猜字母.html'>Guess Letters 猜字母</a><li><a href='Birthday Dictionaries 生日字典.html'>Birthday Dictionaries 生日字典</a><li><a href='Birthday Plots生日情節.html'>Birthday Plots生日情節</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Birthday Dictionaries 生日字典 << <a href='Birthday Dictionaries 生日字典.html'>Previous</a> <br /><h1>Birthday Plots生日情節</h1>
+<p></p>
+<p>Exercise 36 (and<span> Solution</span>)</p>
+<p><em>This exercise is Part 4 of 4 of the birthday data exercise series. The other exercises are:Part 1, Part 2, and Part 3.</em></p>
+<p>In the<span> previous exercise</span>we counted how many birthdays there are in each month in our dictionary of birthdays.</p>
+<p>In this exercise, use the<span> bokeh</span><span> </span>Python library to plot a histogram of which months the scientists have birthdays in! Because it would take a long time for you to input the months of various scientists, you can use<span> my scientist birthday JSON file.</span>Just parse out the months (if you don’t know how, I suggest looking at the<span> previous exercise</span>or<span> its solution)</span>and draw your histogram.</p>
+<p>If you are using a purely web-based interface for coding, this exercise won’t work for you, since it requires installing the<span> </span><code class="highlighter-rouge">bokeh</code><span> </span>Python package. Now might be a good time toinstall Python on your own computer.</p>
+<p>Discussion</p>
+<p>Today’s topic is going to be about the<span> bokeh</span>plotting library. We create plots and charts to display and communicate information from data, and it would be great to do that directly from Python. Sometimes it is really nice to write code or algorithms from scratch to learn and practice, and sometimes, someone has already written the code so well that you should use theirs. Bokeh is one of these libraries - it is library specifically with functions for making plots, charts, and graphs. It is based on the famous<span> D3.js</span><span> </span>library originally developed at the<span> </span><em>New York Times</em><span> </span>for their visualizations, which has been used for many years to programmatically create visually appealing data visualizations.</p>
+<p>When to make plots</p>
+<p>We use plots to convey information. From this histogram:</p>
+<p><img alt="US Government spending histogram" src="https://www.practicepython.org/assets/imgs/united-states-government-spending.png"/></p>
+<p>You can immediately see that the US government spending has been steadily increasing, reaching a peak in January 2017.</p>
+<p>So learning how to make plots will help you become better at displaying and communicating information, both to yourself and to others.</p>
+<p>Plotting libraries in Python</p>
+<p>If you are looking for a plotting library in Python, you have two main options:matplotlibandbokeh. Today I want to discuss bokeh, because I think it will become more popular in years to come.</p>
+<p>Many Python developers (and especially data scientists and researchers) will tell you that the most commonly used plotting library in Python ismatplotlib.I myself was a matplotlib user for many years - the integrations with Python data libraries are great, and migrating from the MATLAB plotting environment to matplotlib is easy. But a friend introduced me to bokeh and I was hooked ever since. Because it is based on D3.js, the visualizations look smooth and professional.</p>
+<p>There is no one “best” plotting library - you should use whichever one feels and looks better for you. But for the rest of this post, I’ll talk about how to use bokeh to make a basic plot.</p>
+<p>Installing bokeh</p>
+<p>To use bokeh, we first have to install it. Unlike something like<span> json</span><span> </span>orCounter<span> </span>from previous exercises, bokeh does not come installed with Python.</p>
+<p>If you are using the<span> Anaconda Python</span>distribution (which you should, if you are on Windows!) then you can install bokeh by typing</p>
+<p><code class="language-bash" data-lang="bash">conda install bokeh</code></p>
+<p>in the Windows command prompt or the bash shell.</p>
+<p>On OSX or GNU / Linux, just type</p>
+<p><code class="language-bash" data-lang="bash">pip3 install bokeh</code></p>
+<p>(If you have are using Python 2, you should do<span> </span><code class="highlighter-rouge">pip install bokeh</code>.)</p>
+<p>Using bokeh</p>
+<p>The basic idea of any plotting package is simple:</p>
+<ol>
+<li>Load the data</li>
+<li>Display the data</li>
+</ol>
+<p>So the first thing you have to do is prepare some data. Usually, when you are plotting data you have two axes, or groups of data, an x-axis (or horizontal axis) and a y-axis (or vertical axis). The<span> </span><code class="highlighter-rouge">x</code><span> </span>variable is your input (independent) variable and the<span> </span><code class="highlighter-rouge">y</code><span> </span>variable is your output (dependent) variable.</p>
+<p>For use in bokeh, your data should be loaded into two separate lists, one for the x-axis and one for the y-axis. The basic format of a bokeh (in this case histogram) looks like this:</p>
+<p><code class="language-python" data-lang="python"><span class="c"># need to import at least 3 things to make your</span> <span class="c"># bokeh plots work</span> <span class="kn">from</span> <span class="nn">bokeh.plotting</span> <span class="kn">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">show</span><span class="p">,</span> <span class="n">output_file</span> <span class="c"># we specify an HTML file where the output will go</span> <span class="n">output_file</span><span class="p">(</span><span class="s">"plot.html"</span><span class="p">)</span> <span class="c"># load our x and y data</span> <span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span> <span class="c"># create a figure</span> <span class="n">p</span> <span class="o">=</span> <span class="n">figure</span><span class="p">()</span> <span class="c"># create a histogram</span> <span class="n">p</span><span class="o">.</span><span class="n">vbar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span> <span class="c"># render (show) the plot</span> <span class="n">show</span><span class="p">(</span><span class="n">p</span><span class="p">)</span></code></p>
+<p>The way bokeh outputs plots is really cool: when you run a piece of bokeh code, it outputs the result into an HTML file that you can then save and display in a web browser on it’s own. After you run this segment on top, it will automatically open a web browser and show you a plot.</p>
+<p>One awesome feature of Bokeh is that it gives you a toolbar you can use to play with the graph - moving it around, zooming out, saving it, etc. Plus, you can put it directly into am HTML page!</p>
+<p>It will look something like this:</p>
+<div class="bk-toolbar-wrapper bk-layout-null" id="modelid_d9f4290f-5eec-4bca-a125-d312f108651b">
+<div class="bk-toolbar-right bk-toolbar-sticky"><a class="bk-logo bk-logo-small" href="http://bokeh.pydata.org/" target="_blank"></a>
+<div class="bk-button-bar">
+<div class="bk-button-bar-list" type="pan">
+<div class="bk-toolbar-button bk-active">
+<div class="bk-btn-icon bk-tool-icon-pan">The example above works when<span> </span><code class="highlighter-rouge">x</code><span> </span>is a numerical value. But, in the exercise, we are dealing with months, which is called a “categorical” variable (i.e. it belongs to a category, and is not continuous). To make sure bokeh draws the axis correctly, you need to specify a special call to<span> </span><code class="highlighter-rouge">figure()</code><span> </span>to pass an<span> </span><code class="highlighter-rouge">x_range</code>, like so:</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">bokeh.plotting</span> <span class="kn">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">show</span><span class="p">,</span> <span class="n">output_file</span> <span class="n">output_file</span><span class="p">(</span><span class="s">"plot.html"</span><span class="p">)</span> <span class="n">x_categories</span> <span class="o">=</span> <span class="p">[</span><span class="s">"a"</span><span class="p">,</span> <span class="s">"b"</span><span class="p">,</span> <span class="s">"c"</span><span class="p">,</span> <span class="s">"d"</span><span class="p">,</span> <span class="s">"e"</span><span class="p">]</span> <span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="s">"a"</span><span class="p">,</span> <span class="s">"d"</span><span class="p">,</span> <span class="s">"e"</span><span class="p">]</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span> <span class="n">p</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">x_range</span><span class="o">=</span><span class="n">x_categories</span><span class="p">)</span> <span class="n">p</span><span class="o">.</span><span class="n">vbar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span> <span class="n">show</span><span class="p">(</span><span class="n">p</span><span class="p">)</span></code></p>
+<p>Here’s what this one looks like:</p>
+<p>There are also extra commands and arguments you can pass to bokeh to display an title for the plot, for each of the axis, for the color of the bars, and so on.</p>
+<p>If you want to dive deep into that documentation, check out these resources:</p>
+<ul>
+<li>Bar plots / histograms</li>
+<li>Categorical axes</li>
+<li>Everything to do with styling plots</li>
+<li>Basic plotting for other types of graphs</li>
+</ul>
+<p>If you want to add more flair to your histogram from this exercise, there are many resources on the web to help you out!</p>
+<p>Happy coding!</p>
+<p><br/>練習36（和解決方案）<br/>此練習是生日數據練習系列4的第4部分。其他練習是：第1部分，第2部分和第3部分。</p>
+<p>在上一個練習中，我們在生日詞典中計算了每個月有多少個生日。</p>
+<p>在本練習中，使用bokeh Python庫繪製科學家在哪幾個月生日的直方圖！由於輸入多個科學家的時間會花費很長時間，因此可以使用我的科學家生日JSON文件。只需解析幾個月（如果您不知道如何做，我建議您查看上一個練習或其解決方案）並繪製直方圖。</p>
+<p><br/>如果您使用的是純粹基於網絡的界面進行編碼，則此練習對您不起作用，因為它需要安裝bokeh Python軟件包。現在可能是在自己的計算機上安裝Python的好時機。討論區<br/>今天的主題將是關於散景繪圖庫。我們創建繪圖和圖表以顯示和傳達數據中的信息，直接從Python中進行操作非常好。有時候從頭開始編寫代碼或算法來學習和實踐真的很棒，有時，有人已經寫好了代碼，應該使用他們的代碼。 Bokeh是這些庫之一-它是專門具有繪製圖表，圖表和圖形的函數的庫。它基於最初在《紐約時報》上開發的用於可視化的著名D3.js庫，該庫已被用於以編程方式創建具有視覺吸引力的數據可視化。 <br/>什麼時候作圖<br/>我們使用圖來傳達信息。根據此直方圖：</p>
+<p>美國政府支出直方圖</p>
+<p>您可以立即看到，美國政府支出一直在穩定增長，在2017年1月達到峰值。</p>
+<p>因此，學習如何繪製情節將有助於您更好地顯示和與自己以及他人交流信息。</p>
+<p><br/>用Python繪製庫<br/>如果要在Python中尋找繪圖庫，則有兩個主要選項：matplotlib和bokeh。今天，我想討論散景，因為我認為它會在未來幾年變得越來越流行。</p>
+<p>許多Python開發人員（尤其是數據科學家和研究人員）會告訴您，Python中最常用的繪圖庫是matplotlib。我本人是matplotlib用戶多年，與Python數據庫的集成非常好，並且從MATLAB繪圖環境遷移到matplotlib很容易。但是一個朋友向我介紹了散景，從那時起我就迷上了。由於它基於D3.js，因此可視化效果看起來既流暢又專業。</p>
+<p>沒有一個“最佳”繪圖庫-您應該使用對您而言感覺更好的一種。但是，在本文的其餘部分中，我將討論如何使用bokeh進行基本繪圖。</p>
+<p><br/>安裝背景虛化<br/>要使用bokeh，我們首先必須安裝它。與以前的練習中的json或Counter之類的東西不同，Python不附帶bokeh。</p>
+<p>如果使用的是Anaconda Python發行版（如果在Windows上，則應使用該發行版），然後可以通過鍵入來安裝bokeh</p>
+<p><br/>康達安裝散景<br/>在Windows命令提示符或bash shell中。</p>
+<p>在OSX或GNU / Linux上，只需鍵入</p>
+<p><br/>pip3安裝散景<br/>（如果您使用的是Python 2，則應執行pip install bokeh。） <br/>使用散景<br/>任何繪圖程序包的基本思想都很簡單： <br/>加載數據<br/>顯示數據<br/>因此，您要做的第一件事是準備一些數據。通常，在繪製數據時，您有兩個軸或一組數據，分別是x軸（或水平軸）和y軸（或垂直軸）。 x變量是您的輸入（獨立）變量，y變量是您的輸出（獨立）變量。</p>
+<p>為了在bokeh中使用，您的數據應加載到兩個單獨的列表中，一個用於x軸，一個用於y軸。散景的基本格式（在本例中為直方圖）如下所示：</p>
+<p><br/>＃需要至少導入3件事才能使您的<br/>＃散景圖工作<br/>來自bokeh.plotting導入圖，顯示，output_file <br/>＃我們指定一個HTML文件，輸出將在其中<br/>output_file（“ plot.html”） <br/>＃加載我們的x和y數據<br/>x = [10，20，30]<br/>y = [4，5，6] <br/>＃創建一個人物<br/>p =數字（） <br/>＃創建直方圖<br/>p.vbar（x = x，top = y，寬度= 0.5） <br/>＃渲染（顯示）情節<br/>顯示（p）<br/>散景輸出圖的方式真的很酷：運行一段散景代碼時，它將結果輸出到HTML文件中，然後您可以將其保存並單獨顯示在網絡瀏覽器中。在頂部運行此段後，它將自動打開Web瀏覽器並顯示圖。</p>
+<p>Bokeh的一項令人敬畏的功能是，它為您提供了一個可用於處理圖形的工具欄-進行移動，縮放，保存等。此外，您可以將其直接放入HTML頁面！</p>
+<p>它看起來像這樣：</p>
+<p>當x是數字值時，以上示例適用。但是，在練習中，我們要處理幾個月，這被稱為“類別”變量（即它屬於一個類別，並且不是連續的）。為了確保bokeh正確繪製軸，您需要指定對fig（）的特殊調用以傳遞x_range，如下所示：</p>
+<p>來自bokeh.plotting導入圖，顯示，output_file</p>
+<p><br/>output_file（“ plot.html”）<br/>x_categories = [“ a”，“ b”，“ c”，“ d”，“ e”]<br/>x = [“ a”，“ d”，“ e”]<br/>y = [4，5，6] <br/>p =圖形（x_range = x_categories）<br/>p.vbar（x = x，top = y，寬度= 0.5） <br/>顯示（p）<br/>這是這樣的：</p>
+<p>您還可以傳遞給bokeh額外的命令和參數，以顯示繪圖的標題，每個軸的標題，條形的顏色等等。</p>
+<p>如果您想深入了解該文檔，請查看以下資源：</p>
+<p><br/>條形圖/直方圖<br/>分類軸<br/>與樣式圖有關的一切<br/>其他類型圖形的基本繪圖<br/>如果您想通過此練習為直方圖增加更多個性，網絡上有很多資源可以幫助您！</p>
+<p>祝您編碼愉快！</p><br />Birthday Dictionaries 生日字典 << <a href='Birthday Dictionaries 生日字典.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
